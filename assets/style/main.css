@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: calc(100% - 200px);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+h2{
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: flex;
+    gap: 15px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo a{
+    padding: 0;
+}
+.capital{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: larger;
+}
+.about{
+    padding: 40px 0;
+}
+.about p{
+    padding: 0 0 10px 0 ;
+    line-height: 1.5;
+    
+}
+.header-scrolled{
+    background-color: teal;
+    transition: 0.5s all linear;
+}
+.d-none{
+    display: none;
+}
+.loading{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-none{
+    display: none;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+    .products{
+        padding: 40px 0;
+    }
+    .products .row{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .product{
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    .product:hover{
+        box-shadow: 0 0 20px rgba(50, 0, 50, 0.5);
+    }
+    img{
+        height: 200px;
+        width: 250px;
+
+    }
+    .products .product h2{
+        color: purple;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 20px;
+        padding: 10px 25px;
+    }
+    .products .product p{
+        padding: 10px 25px;
+        font-weight: bold;
+    }
+    .my-modal{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+    }
+    .my-modal .img{
+        background-color: #fff;
+        padding: 40px 70px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.6);
+        position: relative;
+    }
+    .my-modal img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .left-btn,.right-btn,.close-btn{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    .left-btn{
+        left: 10px;
+        top: 50%;
+    }
+
+    .right-btn{
+        right: 10px;
+        top: 50%;
+    }
+
+    .close-btn{
+        top: 10px;
+        right: 10px;
+    }
+    .d-none{
+        display: none;
+    }
+    .product img,.close-btn,.left-btn,.right-btn{
+        cursor: pointer;
+    }
+
+
+    .pagination{
+        display: flex;
+        list-style-type: none;
+        margin-top: 10px;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagination button{
+        border: 0;
+        padding: 5px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .pagination button:hover{
+        text-decoration: underline;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .pagination button:active{
+        text-decoration: underline;
+        font-weight: bold;
+        
+    }
+ .active-btn{
+        text-decoration: underline;
+        font-weight: bold;
+        color:blue;
+        
+    }
+    
